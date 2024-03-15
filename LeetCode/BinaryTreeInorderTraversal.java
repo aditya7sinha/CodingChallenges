@@ -5,6 +5,7 @@ import java.util.List;
 
 public class BinaryTreeInorderTraversal {
  List<Integer> list = new ArrayList<>();
+
  public List<Integer> inorderTraversal(TreeNode root) {
   if(root==null) return new ArrayList<>();
   inorderTraversal(root.left);
