@@ -1,7 +1,20 @@
 package LeetCode;
 
-public class GuessNumberHigherOrLower {
+import java.util.Scanner;
 
+public class GuessNumberHigherOrLower {
+    public int guess (int num) {
+        Scanner sc = new Scanner(System.in);
+        int pick = sc.nextInt();
+        if(pick>num){
+            return 1;
+        }
+        else if (pick < num)
+        {
+            return -1;
+        }
+        return 0;
+    }
     public int guessNumber(int n) {
         int low = 1;
         int high = n;
